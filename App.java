@@ -1,39 +1,30 @@
 public class App {
     public static void main(String[] args) throws Exception {
+        int j = 109;
         System.out.println("Algoritmo 1: ");
-        for(int i = 0; i<=30; i++){
-            System.out.println("n: "+ i);
-            System.out.println("Contador de operações:" + algoritmo1(i));
-        }
+        System.out.println("Contador de operações:" + algoritmo1(j));
+
         System.out.println(".....................................");
         System.out.println("Algoritmo 2: ");
-        for(int i = 0; i<=30; i++){
-            System.out.println("n: "+ i);
-            System.out.println("Contador de operações:" + algoritmo2(i));
-        }
+        System.out.println("Contador de operações:" + algoritmo2(j));
+        
         System.out.println(".....................................");
         System.out.println("Algoritmo 3: ");
-        for(int i = 0; i<=30; i++){
-            System.out.println("n: "+ i);
-            System.out.println("Contador de operações:" + algoritmo3(i));
-        }
+        System.out.println("Contador de operações:" + algoritmo3(j));
+
         System.out.println(".....................................");
         System.out.println("Algoritmo 4: ");
-        for(int i = 0; i<=30; i++){
-            System.out.println("n: "+ i);
-            System.out.println("Contador de operações:" + algoritmo4(i));
-        }
+        System.out.println("Contador de operações:" + algoritmo4(j));
+    
         System.out.println(".....................................");
         System.out.println("Algoritmo 5: ");
-        for(int i = 0; i<=30; i++){
-            System.out.println("n: "+ i);
-            System.out.println("Contador de operações:" + algoritmo5(i));
-        }
+        System.out.println("Contador de operações:" + algoritmo5(j));
+        
         
     }
     
     public static int algoritmo1(int n) {
-        long startTime = System.nanoTime();
+        long startTime = System.nanoTime(); //contagem do tempo
         int i, j, k, res = 0;
         int cont_op = 0;
         for (i = n; i <= n + 1; i += 1) {
@@ -45,7 +36,7 @@ public class App {
             }
         }
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução em nanosegundos:" + (endTime - startTime) );
+        System.out.println("Tempo de execução em nanosegundos:" + (endTime - startTime) );//contagem do tempo
         return cont_op;
     }
 
